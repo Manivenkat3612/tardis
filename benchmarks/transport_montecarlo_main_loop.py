@@ -22,7 +22,7 @@ class BenchmarkTransportMontecarloMontecarloMainLoop(BenchmarkBase):
         self.packet_collection = self.transport_state.packet_collection
         self.geometry_state = self.transport_state.geometry_state
         self.time_explosion = self.verysimple_time_explosion
-        self.opacity_state = self.transport_state.opacity_state
+        self.opacity_state = self.transport_state.opacity_state_numba
         self.radfield_mc_estimators = (
             self.transport_state.radfield_mc_estimators
         )
